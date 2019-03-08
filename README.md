@@ -95,7 +95,7 @@ Import the reference to the generated SDK files inside your html file like:
 
     <!-- API Controllers -->
     <script src="scripts/APIMATICCalculatorLib/Controllers/BaseController.js"></script>
-    <script src="scripts/APIMATICCalculatorLib/Controllers/CalculatorEndpoints.js"></script>
+    <script src="scripts/APIMATICCalculatorLib/Controllers/CalculatorDevOpsConf.js"></script>
 
 
     <!-- Models -->
@@ -168,26 +168,26 @@ var app = angular.module('myApp', [APIMATICCalculatorLib]);
 
 ## <a name="list_of_controllers"></a>List of Controllers
 
-* [CalculatorEndpoints](#calculator_endpoints)
+* [CalculatorDevOpsConf](#calculator_dev_ops_conf)
 
-## <a name="calculator_endpoints"></a>![Class: ](https://apidocs.io/img/class.png ".CalculatorEndpoints") CalculatorEndpoints
+## <a name="calculator_dev_ops_conf"></a>![Class: ](https://apidocs.io/img/class.png ".CalculatorDevOpsConf") CalculatorDevOpsConf
 
 ### Get singleton instance
 
-The singleton instance of the ``` CalculatorEndpoints ``` class can be accessed via Dependency Injection.
+The singleton instance of the ``` CalculatorDevOpsConf ``` class can be accessed via Dependency Injection.
 
 ```js
-	app.controller("testController", function($scope, CalculatorEndpoints){
+	app.controller("testController", function($scope, CalculatorDevOpsConf){
 	});
 ```
 
-### <a name="calculate_op"></a>![Method: ](https://apidocs.io/img/method.png ".CalculatorEndpoints.calculateOp") calculateOp
+### <a name="calculate_dev_ops_stamford"></a>![Method: ](https://apidocs.io/img/method.png ".CalculatorDevOpsConf.calculateDevOpsStamford") calculateDevOpsStamford
 
 > Calculates the expression using the specified operation..
 
 
 ```javascript
-function calculateOp(operation, x, y)
+function calculateDevOpsStamford(operation, x, y)
 ```
 #### Parameters
 
@@ -204,13 +204,13 @@ function calculateOp(operation, x, y)
 ```javascript
 
 
-	app.controller("testController", function($scope, CalculatorEndpoints){
+	app.controller("testController", function($scope, CalculatorDevOpsConf){
         var operation = new OperationType(MULTIPLY);
         var x = 4;
         var y = 5;
 
 
-		var result = CalculatorEndpoints.calculateOp(operation, x, y);
+		var result = CalculatorDevOpsConf.calculateDevOpsStamford(operation, x, y);
         //Function call returns a promise
         result.then(function(success){
 			//success case
