@@ -13,7 +13,7 @@ angular.module('APIMATICCalculatorLib')
     function Configuration() {
         return {
             //The base Uri for API calls
-            BASEURI : 'http://examples.apimatic.io/apps/calculator'
+            BASEURI : 'http://129.213.81.39/testing/apps/calculator'
 
         };
     }
