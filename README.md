@@ -95,12 +95,12 @@ Import the reference to the generated SDK files inside your html file like:
 
     <!-- API Controllers -->
     <script src="scripts/APIMATICCalculatorLib/Controllers/BaseController.js"></script>
-    <script src="scripts/APIMATICCalculatorLib/Controllers/SimpleCalculatorController.js"></script>
+    <script src="scripts/APIMATICCalculatorLib/Controllers/CalculatorDevOpsConf.js"></script>
 
 
     <!-- Models -->
     <script src="scripts/APIMATICCalculatorLib/Models/BaseModel.js"></script>
-    <script src="scripts/APIMATICCalculatorLib/Models/OperationTypeEnum.js"></script>
+    <script src="scripts/APIMATICCalculatorLib/Models/OperationType.js"></script>
 
     ...
 </head>
@@ -168,26 +168,26 @@ var app = angular.module('myApp', [APIMATICCalculatorLib]);
 
 ## <a name="list_of_controllers"></a>List of Controllers
 
-* [SimpleCalculatorController](#simple_calculator_controller)
+* [CalculatorDevOpsConf](#calculator_dev_ops_conf)
 
-## <a name="simple_calculator_controller"></a>![Class: ](https://apidocs.io/img/class.png ".SimpleCalculatorController") SimpleCalculatorController
+## <a name="calculator_dev_ops_conf"></a>![Class: ](https://apidocs.io/img/class.png ".CalculatorDevOpsConf") CalculatorDevOpsConf
 
 ### Get singleton instance
 
-The singleton instance of the ``` SimpleCalculatorController ``` class can be accessed via Dependency Injection.
+The singleton instance of the ``` CalculatorDevOpsConf ``` class can be accessed via Dependency Injection.
 
 ```js
-	app.controller("testController", function($scope, SimpleCalculatorController){
+	app.controller("testController", function($scope, CalculatorDevOpsConf){
 	});
 ```
 
-### <a name="get_calculate"></a>![Method: ](https://apidocs.io/img/method.png ".SimpleCalculatorController.getCalculate") getCalculate
+### <a name="calculate_dev_ops_stamford"></a>![Method: ](https://apidocs.io/img/method.png ".CalculatorDevOpsConf.calculateDevOpsStamford") calculateDevOpsStamford
 
-> Calculates the expression using the specified operation.
+> Calculates the expression using the specified operation..
 
 
 ```javascript
-function getCalculate(input)
+function calculateDevOpsStamford(operation, x, y)
 ```
 #### Parameters
 
@@ -204,14 +204,13 @@ function getCalculate(input)
 ```javascript
 
 
-	app.controller("testController", function($scope, SimpleCalculatorController){
-        var input = [];
-        input['operation'] = new OperationTypeEnum(MULTIPLY);
-        input['x'] = 4;
-        input['y'] = 5;
+	app.controller("testController", function($scope, CalculatorDevOpsConf){
+        var operation = new OperationType(DIVIDE);
+        var x = 20;
+        var y = 4;
 
 
-		var result = SimpleCalculatorController.getCalculate(input);
+		var result = CalculatorDevOpsConf.calculateDevOpsStamford(operation, x, y);
         //Function call returns a promise
         result.then(function(success){
 			//success case
